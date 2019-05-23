@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Pasito perron
+                    Pasito perron, pasito ilusion
                 </div>
 
                 <div class="links">
