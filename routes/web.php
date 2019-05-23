@@ -11,13 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/acerca', function() {
-    return view('paginas.acerca');
-});
+Route::get('/', 'PaginaController@index');
+Route::get('/acerca', 'PaginaController@acerca');
+Route::get('/servicio', 'PaginaController@servicio');
 
 Auth::routes();
 

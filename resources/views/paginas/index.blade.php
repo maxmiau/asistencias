@@ -9,6 +9,6 @@
       
     </head>
     <body>
-        <h1>Esto es la pagina de acerca</h1>
+        <h1>Esto es un index booouy</h1>
     </body>
 </html>
