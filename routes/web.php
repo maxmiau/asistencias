@@ -15,6 +15,9 @@ Route::get('/', 'PaginaController@index');
 Route::get('/acerca', 'PaginaController@acerca');
 Route::get('/servicio', 'PaginaController@servicio');
 
+// Rutas del login
 Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
+
+// Rutas de las faltas
+Route::resource('falta', 'faltaController');
