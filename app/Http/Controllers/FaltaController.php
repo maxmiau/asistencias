@@ -47,7 +47,8 @@ class FaltaController extends Controller
      */
     public function show($id)
     {
-        //
+        $falta = Falta::find($id);
+        return view('falta.mostrar')->with('falta', $falta);
     }
 
     /**

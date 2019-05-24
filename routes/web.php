@@ -12,8 +12,7 @@
 */
 
 Route::get('/', 'PaginaController@index');
-Route::get('/acerca', 'PaginaController@acerca');
-Route::get('/servicio', 'PaginaController@servicio');
+
 
 // Rutas del login
 Auth::routes();

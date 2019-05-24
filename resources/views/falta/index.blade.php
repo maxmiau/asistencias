@@ -5,7 +5,7 @@
     @if(count($faltas) > 0)
         @foreach($faltas as $faltas)
             <div class="well well-lg">
-                <h3>{{$faltas->asistencia}}</h3>
+                <h3><a href="/falta/{{$faltas->id}}">{{$faltas->asistencia}}</a></h3>
                 <small>Registradas el dia {{$faltas->created_at}}</small>
             </div>
         @endforeach

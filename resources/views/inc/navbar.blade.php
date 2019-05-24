@@ -10,10 +10,7 @@
         <a class="nav-link" href="/">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/acerca">Acerca</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/servicio">Servicios</a>
+        <a class="nav-link" href="/falta">Faltas</a>
       </li>
     </ul>
     
