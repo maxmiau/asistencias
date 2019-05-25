@@ -1,5 +1,7 @@
 @extends('layouts.app')
-
+{{-- Esta vista tiene la funcion de mostrar una falta y alumno en particular al ser seleccionado 
+     desde el index.blade de la carpeta falta
+ --}}
 @section('content')
    <h1>{{$falta->asistencia}}</h1>
    <small>Capturada el dia  {{$falta->created_at}}</small>

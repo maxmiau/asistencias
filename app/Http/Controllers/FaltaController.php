@@ -14,7 +14,11 @@ class FaltaController extends Controller
      */
     public function index()
     {
-        $faltas = Falta::all();
+        /** Este metodo sive para obtener todos los registros de la 
+         *  base de datos de manera ordenada descente, demas de agregar una paginacion
+         *  de 5 en 5.
+         */
+        $faltas = Falta::orderBy('id', 'desc')->paginate(5);
         return view('falta.index')->with('faltas', $faltas);
     }
 

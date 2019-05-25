@@ -18,5 +18,5 @@ Route::get('/', 'PaginaController@index');
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
-// Rutas de las faltas
+// Rutas de las faltas que son generadas dinamicamente
 Route::resource('falta', 'faltaController');
