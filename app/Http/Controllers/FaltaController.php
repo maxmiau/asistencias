@@ -18,7 +18,7 @@ class FaltaController extends Controller
          *  base de datos de manera ordenada descente, demas de agregar una paginacion
          *  de 5 en 5.
          */
-        $faltas = Falta::orderBy('id', 'desc')->paginate(5);
+        $faltas = Falta::orderBy('id', 'desc')->paginate(10);
         return view('falta.index')->with('faltas', $faltas);
     }
 
@@ -29,7 +29,7 @@ class FaltaController extends Controller
      */
     public function create()
     {
-        //
+        return view('falta.crear');
     }
 
     /**
@@ -40,7 +40,9 @@ class FaltaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = request()->all();
+
+        
     }
 
     /**
